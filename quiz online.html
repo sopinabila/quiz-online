@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuiz Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>kuis pemprograman web</h1>
+
+    <label>Nama peserta:</label>
+    <input type="text" id="nama" placeholder="Masukkan nama">
+    <hr>
+    
+    <form id="quizForm">
+
+        <!--SOAL-->
+        <div class="question">
+            <p>1. HTML digunakan untuk?</p>
+            <label><input type="radio" name="q1" value="a">Mengelola angka</label>
+            <label><input type="radio" name="q1" value="b">Membuat struktur dan isi halaman web</label>
+            <label><input type="radio" name="q1" value="c">Menghitung angka</label>
+            <label><input type="radio" name="q1" value="d">Database</label>
+        </div>
+
+        <div class="question">
+            <p>2. css berfungsi untuk?</p>
+            <label><input type="radio" name="q2" value="a">Struktur web</label>
+            <label><input type="radio" name="q2" value="b">Database</label>
+            <label><input type="radio" name="q2" value="c">Tampilan web</label>
+            <label><input type="radio" name="q2" value="d">Server</label>
+        </div>
+
+        <div class="question">
+            <p>3. Javascript digunakan untuk?</p>
+            <label><input type="radio" name="q3" value="a">Desain</label>
+            <label><input type="radio" name="q3" value="b">Interaksi website</label>
+            <label><input type="radio" name="q3" value="c">Database</label>
+            <label><input type="radio" name="q3" value="d">Jaringan</label>
+        </div>
+
+        <div class="question">
+            <p>4. File javascrpt memiliki ekstensi?</p>
+            <label><input type="radio" name="q4" value="a">.CSS</label>
+            <label><input type="radio" name="q4" value="b">.JS</label>
+            <label><input type="radio" name="q4" value="c">.HTML</label>
+            <label><input type="radio" name="q4" value="d">.PHP</label>
+        </div>
+
+        <div class="question">
+            <p>5.HTML singkatan dari?</p>
+            <label><input type="radio" name="q5" value="a">Hyper Text Markup Language</label>
+            <label><input type="radio" name="q5" value="b">High Text Machine Language</label>
+            <label><input type="radio" name="q5" value="c">Hyperlinks Text Mark Language</label>
+            <label><input type="radio" name="q5" value="d">Home Tool Markup Language</label>
+        </div>
+        
+        <button type="button" onclick="checAnswers()">Submit</button>
+        <button type="button" onclick="resetQuiz()">ulangi kuis</button>
+    </form>
+
+    <div id="hasil"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
